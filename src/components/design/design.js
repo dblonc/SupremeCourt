@@ -10,15 +10,15 @@ class Design extends React.Component {
                 <div className = "design-text">
                     Design
                 </div>
-                <div className = "image-section">
-                    <div className = "image-container">
-                        <div className="square-1"></div>
-                        <div className="square-2"></div>
-                        <div className="square-3"></div>
-                        <div className="square-4"></div>
-                    </div>
+            
+                <div className = "image-container">
+                    <div className="square-1"></div>
+                    <div className="square-2"></div>
+                    <div className="square-3"></div>
+                    <div className="square-4"></div>
                 </div>
-                <div className = "text-sextion">
+
+                <div className = "text-section">
                     <div className = "headline">
                         Lorem ipsum dolor sit amet consectetur.
                     </div>
@@ -27,7 +27,14 @@ class Design extends React.Component {
                         sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua. Diam ut venenatis tellus in metus vulputate. Urna nec 
                         tincidunt praesent semper feugiat nibh sed pulvinar.
+
+                        
                     </div>
+                        <button className = "button">
+                            <span className="button-text">
+                                This is a Button
+                            </span>
+                        </button>
                 </div>
             </div>
         )
