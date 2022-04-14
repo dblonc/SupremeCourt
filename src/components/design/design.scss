@@ -1,0 +1,85 @@
+
+
+.design-text{
+    position: absolute;
+    width: 105px;
+    height: 42px;
+    left: 120px;
+    top: 120px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #1E222E;
+}
+
+.image-container{
+    position: absolute;
+    width: 488px;
+    height: 600px;
+    left: 120px;
+    top: 186px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)), 
+    url(./anna-sullivan-BBHIPz-gPXs-unsplash.jpg);
+
+    border-radius: 5px;
+}
+
+.sc-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.square-1{
+    position: aboslute;
+    top: 636px;
+    width: 2px;
+    height: 130px;
+    left: 140px;
+    bottom: 1107px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+}
+
+.square-2{
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    left: 140px;
+    bottom: 1107px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px; 
+}
+
+.text-section{
+    position: absolute;
+    width: 712px;
+    height: 600px;
+    left: 608px;
+    top: 186px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+}
+
+.headline{
+    position: aboslute;
+    width: 570px;
+    height: 124px;  
+    left: 648px;
+    top: 258px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+
+    color: #1E222E;
+}
