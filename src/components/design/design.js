@@ -12,10 +12,13 @@ class Design extends React.Component {
                 </div>
             
                 <div className = "image-container">
+                </div>
+                <div>
                     <div className="square-1"></div>
                     <div className="square-2"></div>
                     <div className="square-3"></div>
                     <div className="square-4"></div>
+
                 </div>
 
                 <div className = "text-section">

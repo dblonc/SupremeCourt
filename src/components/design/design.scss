@@ -22,7 +22,8 @@
     left: 120px;
     top: 186px;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./anna-sullivan-BBHIPz-gPXs-unsplash.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+    , url(./anna-sullivan-BBHIPz-gPXs-unsplash.jpg);
 
     background-size: cover;
     border-radius: 5px;
@@ -42,6 +43,7 @@
 
 .square-2{
     position: absolute;
+    top: 764px;
     width: 130px;
     height: 2px;
     left: 140px;
@@ -49,6 +51,31 @@
 
     background: rgba(255, 255, 255, 0.75);
     border-radius: 5px; 
+}
+
+.square-3{
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    right: 1330px;
+    top: 208px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    transform: rotate(-180deg);
+
+}
+
+.square-4{
+    position: absolute;
+    width: 2px;
+    height: 130px;
+    right: 1330px;
+    top: 210px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    transform: rotate(-180deg);
 }
 
 .text-section{
