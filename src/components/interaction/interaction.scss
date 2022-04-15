@@ -1,0 +1,163 @@
+.interaction-container{
+    display: flex;
+}
+
+.int-headline{
+    position: absolute;
+    width: 172px;
+    height: 42px;
+    top: 846px;
+    left: 120px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #1E222E;
+    padding-bottom: 24px;
+}
+
+.sliders{
+    position: absolute;
+    // display: flex;
+    top: 912px;
+    left: 120px;
+}
+
+.slider-a{
+    position: static;
+    width: 80px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 28px;
+}
+
+.a-background{
+    position: absolute;
+    width: 28px;
+    height: 21px;
+    left: 88px;
+    top: 0px;
+
+    background: #EEEEEE;
+}
+
+.a-number{
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    top: 0px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #222222;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+}
+
+.var-a{
+    position: relative;
+    width: 1200px;
+    height: 8px;
+
+    background: #EEEEEE;
+    border-radius: 5px;
+}
+
+.a-div{
+    padding-top: 20px;
+}
+
+.slider-b{
+    position: static;
+    width: 79px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 28px;
+}
+
+.b-background{
+    position: absolute;
+    width: 26px;
+    height: 21px;
+    left: 87px;
+    top:74px;
+
+    background: #EEEEEE;
+}
+.b-number{
+    position: absolute;
+    width: 18px;
+    height: 21px;    
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #222222;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+.b-div{
+    padding-top: 20px;
+}
+
+.var-b{
+    position: absolute;
+    width: 1200px;
+
+    background: #EEEEEE;
+    border-radius: 5px;
+}
+
+.sum-total{
+    position: static;
+    width: 173px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #222222;
+}
+
+.sum{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    padding-left: 12px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #222222;
+}
