@@ -36,7 +36,7 @@ class Interaction extends React.Component {
                         Variable A: <div  className="a-background"> <span className="a-number">{this.state.valueA}</span> </div>
 
                         <div className= "a-div">
-                            <input onMouseUp={this.handleAChange} type="range" defaultValue={this.state.valueA} className="var-a" name="var-a" min="0" max="100"/>
+                            <input onChange={this.handleAChange} type="range" defaultValue={this.state.valueA} className="var-a" name="var-a" min="0" max="100"/>
                         </div>
                  
                         
@@ -46,7 +46,7 @@ class Interaction extends React.Component {
                         Variable B: <div className="b-background"> <span className="b-number">{this.state.valueB}</span> </div>
 
                     <div className="b-div">
-                            <input onMouseUp={this.handleBChange} type="range" defaultValue={this.state.valueB} className="var-b" name="var-b" min="0" max="100" />
+                            <input onChange={this.handleBChange} type="range" defaultValue={this.state.valueB} className="var-b" name="var-b" min="0" max="100" />
                     </div>
 
                     </div>
