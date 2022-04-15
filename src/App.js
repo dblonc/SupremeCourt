@@ -1,6 +1,7 @@
-import Header from './components/header/header'
-import Design from './components/design/design'
-import Interaction from './components/interaction/interaction'
+import Header from './components/header/header';
+import Design from './components/design/design';
+import Interaction from './components/interaction/interaction';
+import Data from './components/data/data'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header/>
       <Design/>
       <Interaction/>
+      <Data/>
     </div>
   );
 }

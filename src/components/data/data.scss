@@ -1,0 +1,28 @@
+.data-title{
+    position: absolute;
+    width: 73px;
+    height: 42px;
+    left: 120px;
+    top: 1147px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+
+    color: #1E222E;
+}
+
+.data-area{
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    top: 1213px;
+    left: 120px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}

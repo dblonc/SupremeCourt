@@ -28,7 +28,7 @@ class Interaction extends React.Component {
     render() {
         return (
             <div className= "interaction-container">
-                {this.calcSum}
+                
                 <span className="int-headline">Interaction</span>
                 
                 <div className="sliders">
