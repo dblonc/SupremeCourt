@@ -11,7 +11,6 @@ class Interaction extends React.Component {
         }
         this.handleAChange = this.handleAChange.bind(this)
         this.handleBChange = this.handleBChange.bind(this)
-        this.calcSum = this.calcSum.bind(this)
     }
 
     handleAChange(e){
@@ -25,21 +24,6 @@ class Interaction extends React.Component {
             valueB: e.target.value
         })
     }
-
-    calcSum(){
-        let tempSum = 
-        this.setState({
-            sum: tempSum
-        })
-    }
-
-    // componentDidUpdate(prevState){
-    //     if(prevState.valueA !== this.state.valueA || prevState.valueB !== this.state.valueB){
-    //         this.setState({
-    //             sum: parseInt(this.state.valueA) + parseInt(this.state.valueB)
-    //         })
-    //     }
-    // }
    
     render() {
         return (
