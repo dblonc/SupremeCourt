@@ -128,11 +128,16 @@
     position: absolute;
     width: 166px;
     height: 48px;
-    border-radius: 5px;
 
     background: linear-gradient(266.33deg, #2649D8 0%, #494AFF 99.63%);
     border-radius: 5px;
     border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: linear-gradient(266.33deg, #2d55f3 0%, #5858ff 99.63%);
+
 }
 
 .button-text{

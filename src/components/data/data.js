@@ -1,6 +1,7 @@
 import React from 'react';
 import './data.scss'
 import * as d3 from 'd3';
+import ScatterPlot from '../scatterplot/scatterplot';
 
 class Data extends React.Component {
     constructor(props) {
@@ -13,6 +14,8 @@ class Data extends React.Component {
         this.formatJudges = this.formatJudges.bind(this)
         this.fetchCases = this.fetchCases.bind(this)
         this.formatCases = this.formatCases.bind(this)
+        this.calculateData = this.calculateData.bind(this)
+        this.resetCases = this.resetCases.bind(this)
     }
 
 
@@ -28,7 +31,8 @@ class Data extends React.Component {
         data.forEach(justice =>{
             tempJudges[justice.id] = {
                 startDate: justice.start_date,
-                caseCount: 0
+                caseCount: 0,
+                justiceName: justice.name
             }
         })
 
@@ -43,10 +47,10 @@ class Data extends React.Component {
     fetchCases(){
         let year = 1795;
         while(year < 2022){
-               let cases = fetch(`https://frontend-exercise-api.herokuapp.com/cases/?before=${year + 5}1231&after=${year}0101`)
+               let cases = fetch(`https://frontend-exercise-api.herokuapp.com/cases/?before=${year + 100}1231&after=${year}0101`)
                     .then((response) => response.json())
                     .then((data) => this.formatCases(Object.values(data)))
-                year += 20
+                year +=101
             
         }
         
@@ -72,9 +76,29 @@ class Data extends React.Component {
         })        
     }
 
-    // componentDidMount(){
-    //     this.fetchJudges().then(()=>this.fetchCases())
-    // }
+    resetCases(){
+        let newJudges = {...this.state.judges};
+
+        Object.values(newJudges).forEach(judge =>{
+            judge.caseCount = 0
+        })
+
+        this.setState({
+            judges: newJudges
+        })
+    }
+
+    calculateData(){
+        let data = []
+        Object.values(this.state.judges).forEach(judge =>{
+            
+            data.push([parseInt(judge.startDate.slice(0,4)), judge.caseCount, judge.justiceName])
+        })
+        return data
+    }
+
+
+    
 
     render(){
         console.log(this.state.judges)
@@ -82,9 +106,10 @@ class Data extends React.Component {
             <div className="data-container">
                 <div className = "data-title">Data</div>
                 <div className="data-area">
-                    <button onClick={this.fetchJudges}>Judges</button>
-                    <button onClick={this.fetchCases}>Cases</button>
-                    <svg width='500' height ='400'></svg>
+                    <button className="graph-btn" onClick={() => { this.resetCases(); this.fetchJudges(); this.fetchCases() }}> 
+                    <span className="graph-btn-text">Generate!</span></button>
+
+                    <ScatterPlot width={1780} data={this.calculateData()}/>
                 </div>
             </div>
         )
