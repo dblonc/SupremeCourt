@@ -1,4 +1,5 @@
 import React from "react"
+import ReactTooltip from 'react-tooltip';
 import { scaleLinear, max, axisLeft, axisBottom, select } from "d3"
 import './scatterplot.scss'
 
@@ -21,7 +22,7 @@ export default class ScatterPlot extends React.Component {
 
         const x = scaleLinear()
             .domain([
-                1780,
+                1781,
                 max(data, function (d) {
                     return d[0]
                 })
@@ -70,11 +71,15 @@ export default class ScatterPlot extends React.Component {
 }
 
 class RenderCircles extends React.Component {
+    
    
     render() {
+     
         let renderCircles = this.props.data.map((coords, i) => (
-        
+        <>
+            <ReactTooltip id="circle-tip" place="top" effect="solid">{coords[2]}</ReactTooltip>
             <circle
+                data-tip = "tooltip"
                 cx={this.props.scale.x(coords[0])}
                 cy={this.props.scale.y(coords[1])}
                 r="8"
@@ -82,6 +87,7 @@ class RenderCircles extends React.Component {
                 key={i}
                 alt = {coords[2]}
             />
+        </>
         ))
         return <g>{renderCircles}</g>
     }

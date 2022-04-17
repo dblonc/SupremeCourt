@@ -1,5 +1,3 @@
-
-
 .design-text{
     position: absolute;
     width: 105px;
@@ -150,4 +148,30 @@
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media (max-width: 400px){
+    .design-text{
+        position: absolute;
+        width: 73px;
+        height: 29px;
+        left: 20px;
+        top: 84px;
+    }
+
+    .image-container{
+        position: absolute;
+        width: 390px;
+        height: 440px;
+        left: 0px;
+        top: 129px;
+    }
+
+    .headline{
+        position: absolute;
+        width: 350px;
+        height: 72px;
+        left: 20px;
+        top: 291px;
+    }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './data.scss'
-import * as d3 from 'd3';
 import ScatterPlot from '../scatterplot/scatterplot';
 
 class Data extends React.Component {
