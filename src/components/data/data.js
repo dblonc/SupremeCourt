@@ -106,9 +106,10 @@ class Data extends React.Component {
                 <div className = "data-title">Data</div>
                 <div className="data-area">
                     <button className="graph-btn" onClick={() => { this.resetCases(); this.fetchJudges(); this.fetchCases() }}> 
-                    <span className="graph-btn-text">Generate!</span></button>
-
-                    <ScatterPlot width={1780} data={this.calculateData()}/>
+                    <span className="graph-btn-text">Click here to Generate Graph!</span></button>
+                    <ScatterPlot  data={this.calculateData()}/>
+                    <div className="no-of-cases">  Number of Cases</div>
+                    <div className= "years">Years</div>
                 </div>
             </div>
         )
